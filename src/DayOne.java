@@ -43,8 +43,8 @@ public class DayOne {
         }
         else {
             System.out.println("No specific conditions were met");
-
         }
+
 
     }
 }
