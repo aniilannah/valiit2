@@ -28,21 +28,17 @@ public class ForLoopExercises {
             }
         }
 
-        for (int j = 1; j <= 20; j++) {
+        /*for (int j = 1; j <= 20; j++) { - trine versioon, kuidas seda kirjutada
+
             if (j % 2 == 0) {
                 continue;
             }
-
             if (j % 5 == 0) {
                     continue;
             }
             System.out.println(j);
-
         }
-
-
-
-
+         */
 
     /* Ex 3: Print Multiples of 3 up to 30, Skip Multiples of 6
     // TODO - Use a for loop to print multiples of 3 up to 30. Skip any multiples of 6 using continue.
@@ -58,14 +54,41 @@ public class ForLoopExercises {
 
             }
 
-            // Ex 3 teine versioon, kuidas saab
+            /* Ex 3 teine versioon, kuidas saab
             for(int h = 3; h < 30; h+=3) {
                 if (h % 6 == 0) { // - checking if k is also a multiple of 6
                     continue; // if k is also a multiple of 6, skip this iteration
                 }
                 System.out.println(h);
-            }
+            }*/
+             // Ex 4: Print the Sum of Non-Negative Numbers Until a Negative Number is Found
+             // TODO - Given an array of numbers, use a for loop to calculate the sum of all non-negative numbers.
+            // TODO - Stop the loop when a negative number is encountered.
 
+            int[] numbers = {5,12,3,7,-4,8,2};
+            int sum = 0;
+            for (int number : numbers) {
+                if (number < 0) {
+                    break;
+                }
+                sum += number; // // add the current number to the sum
+
+            }
+                System.out.println(sum);
+
+
+            // Ex 5: Find the first number greater than 50 in an Array
+            // TODO - Given an array of numbers, use a loop to find the first number greater than 50.
+            // TODO Print it and exit the loop immediately after finding it.
+
+            int [] numbers1 = {23,45,39,51,48,60};
+
+            for (int number : numbers1) {
+                if (number>50) {
+                    System.out.println(number);
+                    break;
+                }
+            }
     }
     }
 
