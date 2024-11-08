@@ -58,6 +58,13 @@ public class ForLoopExercises {
 
             }
 
+            // Ex 3 teine versioon, kuidas saab
+            for(int h = 3; h < 30; h+=3) {
+                if (h % 6 == 0) { // - checking if k is also a multiple of 6
+                    continue; // if k is also a multiple of 6, skip this iteration
+                }
+                System.out.println(h);
+            }
 
     }
     }
